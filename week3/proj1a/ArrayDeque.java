@@ -9,7 +9,7 @@ public class ArrayDeque<T> {
         T[] NewArray = (T[]) new Object[resize_size];
         int OldLength = item.length;
         int FirstLength = OldLength - head - 1;
-        System.arraycopy(item, head + 1, NewArray,0, FirstLength);
+        System.arraycopy(item, (head + 1) % item.length, NewArray,0, FirstLength);
         System.arraycopy(item, 0, NewArray, FirstLength, OldLength - FirstLength);
         head = resize_size - 1;
         tail = OldLength - 1;
@@ -19,7 +19,7 @@ public class ArrayDeque<T> {
     private void remove_resize(int resize_size){
         if (head < tail){
             T[] NewArray = (T[]) new Object[resize_size];
-            System.arraycopy(item, head + 1, NewArray, 0, size);
+            System.arraycopy(item, (head + 1) % item.length, NewArray, 0, size);
             item = NewArray;
             head = resize_size - 1;
             tail = size - 1;
@@ -51,7 +51,7 @@ public class ArrayDeque<T> {
         if (size == item.length){
             resize(item.length * 2);
         }
-        item[tail + 1] = x;
+        item[(tail + 1) % item.length] = x;
         if (tail == item.length - 1)
             tail = 0;
         else
@@ -110,6 +110,45 @@ public class ArrayDeque<T> {
         return item[(head + 1 + index) % item.length];
     }
 
+    public void insert(T x, int position) {
+        if (size == item.length){
+            resize(item.length * 2);
+        }
+        if (position >= size){
+            addLast(x);
+            return ;
+        }
+        int head2 = (head + 1) % item.length;
+        for (int i = 0; i <= position; i += 1)
+            head2 = (head2 + 1) % item.length;
+        int temp_tail = tail;
+        for (int i = size - 1; i > position; i -= 1){
+            item[(temp_tail + 1) % item.length] = item[temp_tail];
+            if (temp_tail == 0)
+                temp_tail = item.length - 1;
+            else
+                temp_tail -= 1;
+        }
+        item[(position + 1) % item.length] = x;
+        size += 1;
+        tail = (tail + 1) % item.length;
+    }
+
+    public void reverse() {
+        T[] NewArray = (T[]) new Object[item.length];
+        int head2 = tail;
+        for (int i = 0; i < size; i += 1){
+            NewArray[i] = item[head2];
+            if (head2 == 0)
+                head2 = item.length - 1;
+            else
+                head2 -= 1;
+        }
+        item = NewArray;
+        head = item.length - 1;
+        tail = size - 1;
+    }
+
     public static void main(String[] args){
         System.out.println("Running add/isEmpty/Size test.");
         ArrayDeque<Integer> lld1 = new ArrayDeque<Integer>();
@@ -118,10 +157,8 @@ public class ArrayDeque<T> {
             lld1.addLast(i + 1);
         }
         lld1.printDeque();
-        for(int i = 0; i < 16; i = i + 2){
-            lld1.removeFirst();
-            lld1.removeLast();
-        }
+        lld1.insert(5, 2);
+        lld1.reverse();
         System.out.println("");
         System.out.println(lld1.get(5));
         System.out.println("Printing out deque: ");
