@@ -33,6 +33,7 @@ public class LinkedListDequeTest {
 	  *
 	  * && is the "and" operation. */
 	public static void addIsEmptySizeTest() {
+
 		System.out.println("Running add/isEmpty/Size test.");
 
 		ArrayDeque<String> lld1 = new ArrayDeque<String>();
