@@ -8,14 +8,14 @@ public class Animal {
         this.noise = "Huh?";
     }
 
-    public String makseNoise() {
+    public String makeNoise() {
         if (age < 5) {
             return noise.toUpperCase();
         } else {
             return noise;
         }
     }
-s
+
     public void greet() {
         System.out.println("Animal " + name + " says: " + makeNoise());
     }
