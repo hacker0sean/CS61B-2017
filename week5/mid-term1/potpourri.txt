@@ -1,0 +1,22 @@
+a) 1. compilation error
+    2. runs fine
+    3. compilation error
+    4. runs fine
+    5. runtime error
+b). Missing semicolon at end of statement
+    Attempting to instantiate a generic array as new T[10], where T is a type parameter.
+    Missing return type for a static method.
+    
+c). public static void f() {
+     System.out.println(2);
+     System.out.println(3);
+    }
+    public static void main(String[] args) {
+     System.out.println(1);
+     f(); // BREAKPOINT
+     System.out.println(4);
+    }
+
+    1
+    2
+    3
