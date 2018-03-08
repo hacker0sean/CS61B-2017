@@ -8,16 +8,17 @@ public class ColEntry {
     private String name;
     private String type;
 
-    public ColEntry(String name, String type) {
+    public ColEntry(String name, String typenow) {
         this.name = name;
-        if (type != "int" && type != "float" && type != "String")
+        if ((typenow.equals("int")) || (typenow.equals("float")) || (typenow.equals("string")))
+            this.type = typenow;
+        else
             throw new RuntimeException("Unresolved type");
-        this.type = type;
     }
 
     public boolean equals(Object O) {
         ColEntry b = (ColEntry) O;
-        return (this.name == b.name) && (this.type == b.type);
+        return (this.name.equals(b.name)) && (this.type.equals(b.type));
     }
 
     public String name(){

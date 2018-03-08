@@ -6,6 +6,7 @@ public class IntEntry extends DateEntry<Integer> {
 
     public IntEntry(String value){
         super(false, false, value, "int");
+        realvalue = Integer.parseInt(value);
     }
 
     @Override
@@ -23,9 +24,9 @@ public class IntEntry extends DateEntry<Integer> {
         if (b.NOVALUE() || this.NOVALUE())
             return false;
 
-        if (b.type() != this.type())
+        if (!(b.type().equals(this.type())))
             return false;
-        else if (b.value != this.value)
+        else if (!(b.value.equals(this.value)))
             return false;
         return true;
     }
@@ -45,6 +46,15 @@ public class IntEntry extends DateEntry<Integer> {
             assertEquals(a, b);
             StringEntry c = new StringEntry("3");
             assertNotEquals(b, c);
+        }
+
+        @Test
+        public void testNeg(){
+            IntEntry a = new IntEntry("-2");
+            FloatEntry d = new FloatEntry("-2");
+            Integer b = -2;
+            Integer c = a.realvalue;
+            assertEquals(b, d.realvalue);
         }
     }
 }

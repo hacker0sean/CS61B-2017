@@ -3,12 +3,13 @@ package db;
 public class StringEntry extends DateEntry<String> {
 
     public StringEntry(String value){
-        super(false, false, value, "String");
+        super(false, false, value, "string");
+        realvalue = value;
     }
 
     @Override
     public String value(){
-        return "\'" + value + "\'";
+        return value;
     }
 
     public boolean equals(Object o){

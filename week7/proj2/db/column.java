@@ -2,6 +2,9 @@ package db;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
+
+import java.io.BufferedWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 
 import static org.junit.Assert.assertEquals;
@@ -14,12 +17,46 @@ public class column {
     int length;
 
     // Constructor:
+    public column(String[] entrys){
+        this();
+        for (String entry : entrys){
+            String[] spli = entry.split(" ");
+            String name = spli[0];
+            String type = spli[1];
+            ColEntry d = new ColEntry(name, type);
+            col.add(d);
+            length += 1;
+        }
+    }
+
     public column(){
         col = new ArrayList<>();
         length = 0;
     }
 
+    public column(String line){
+        this();
+        String delims = ",";
+        String[] entrys = line.split(delims);
+        for (String entry : entrys){
+            String[] spli = entry.split(" ");
+            String name = spli[0];
+            String type = spli[1];
+            ColEntry d = new ColEntry(name, type);
+            col.add(d);
+            length += 1;
+        }
+    }
+
     //method:
+    public boolean contain(String x){
+        for (ColEntry entry : col){
+            if (entry.name().equals(x)){
+               return true;
+            }
+        }
+        return false;
+    }
     public void addItem(ColEntry x){
         for (int i = 0; i < col.size(); i += 1){
             if ((col.get(i).name() == x.name()) && (col.get(i).type() == x.type())){
@@ -72,6 +109,14 @@ public class column {
         System.out.println();
     }
 
+    public void printcol(BufferedWriter x) throws IOException{
+        for(int i = 0; i < length; i += 1){
+            x.write(col.get(i).name() + " " + col.get(i).type());
+            if (i != length - 1)
+                x.write(",");
+        }
+        x.write("\n");
+    }
     public static class test{
 
         @Test
@@ -92,6 +137,12 @@ public class column {
             e.printcol();
             e.deleteItem(0);
             assertEquals(c, e.getEntry(0));
+        }
+
+        @Test
+        public void testParse(){
+            String s = "Lastname string,Firstname string,TeamName string";
+            column b = new column(s);
         }
     }
 }

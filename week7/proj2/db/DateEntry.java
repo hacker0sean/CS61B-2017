@@ -5,6 +5,7 @@ public abstract class DateEntry<T> {
     protected boolean NOVALUE;
     protected String value;
     protected String type;
+    protected T realvalue;
 
     public DateEntry(boolean NaN, boolean NOVALUE, String value, String type){
         this.NaN = NaN;

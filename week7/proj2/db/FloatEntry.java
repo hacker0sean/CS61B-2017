@@ -8,6 +8,7 @@ public class FloatEntry extends DateEntry<Float> {
 
     public FloatEntry(String value){
         super(false, false, value, "float");
+        realvalue = Float.parseFloat(value);
     }
 
     @Override
