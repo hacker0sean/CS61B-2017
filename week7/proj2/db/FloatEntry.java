@@ -11,6 +11,10 @@ public class FloatEntry extends DateEntry<Float> {
         realvalue = Float.parseFloat(value);
     }
 
+    public FloatEntry(){
+        super(true, false, "NaN", "float");
+    }
+
     @Override
     public Float value(){
         float x = (float) Float.parseFloat(value);

@@ -1,20 +1,27 @@
 package db;
+
 import org.junit.Test;
+
 import static org.junit.Assert.*;
 
 public class IntEntry extends DateEntry<Integer> {
 
-    public IntEntry(String value){
+    public IntEntry(String value) {
         super(false, false, value, "int");
         realvalue = Integer.parseInt(value);
     }
 
+    public IntEntry(){
+        super(true, false, "NaN", "int");
+    }
+
+
     @Override
-    public Integer value(){
+    public Integer value() {
         return Integer.parseInt(value);
     }
 
-    public boolean equals(Object o){
+    public boolean equals(Object o) {
         DateEntry b = (DateEntry) o;
         if (b.NaN() && this.NaN())
             return true;
@@ -31,10 +38,10 @@ public class IntEntry extends DateEntry<Integer> {
         return true;
     }
 
-    public static class test{
+    public static class test {
 
         @Test
-        public void testEqual(){
+        public void testEqual() {
             IntEntry a = new IntEntry("2");
             IntEntry b = new IntEntry("3");
             assertNotEquals(a, b);
@@ -49,7 +56,7 @@ public class IntEntry extends DateEntry<Integer> {
         }
 
         @Test
-        public void testNeg(){
+        public void testNeg() {
             IntEntry a = new IntEntry("-2");
             FloatEntry d = new FloatEntry("-2");
             Integer b = -2;

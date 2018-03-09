@@ -57,6 +57,16 @@ public class column {
         }
         return false;
     }
+
+    public ColEntry getEntryByName(String x){
+        for (ColEntry entry : col){
+            if(entry.name().equals(x)){
+                return entry;
+            }
+        }
+        return null;
+    }
+
     public void addItem(ColEntry x){
         for (int i = 0; i < col.size(); i += 1){
             if ((col.get(i).name() == x.name()) && (col.get(i).type() == x.type())){

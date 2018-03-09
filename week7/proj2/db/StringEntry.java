@@ -7,6 +7,7 @@ public class StringEntry extends DateEntry<String> {
         realvalue = value;
     }
 
+
     @Override
     public String value(){
         return value;

@@ -68,7 +68,13 @@ public class datacol {
 
     public void printcol() {
         for (int i = 0; i < length; i++) {
-            System.out.print(col.get(i).value().toString());
+            if(col.get(i).NaN)
+                System.out.print("NaN");
+            else if(col.get(i).NOVALUE)
+                System.out.print("NOVALUE");
+            else {
+                System.out.print(col.get(i).value().toString());
+            }
             if (i != length - 1) {
                 System.out.print(",");
             }
