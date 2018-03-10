@@ -110,6 +110,13 @@ public class column {
         return temp;
     }
 
+    public column clone2(){
+        ArrayList<ColEntry> temp = (ArrayList<ColEntry>) col.clone();
+        column temp2 = new column();
+        temp2.addList(temp);
+        return temp2;
+    }
+
     public void printcol(){
         for(int i = 0; i < length; i += 1){
             System.out.print(col.get(i).name() + " " + col.get(i).type());

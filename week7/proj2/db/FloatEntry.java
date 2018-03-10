@@ -15,6 +15,10 @@ public class FloatEntry extends DateEntry<Float> {
         super(true, false, "NaN", "float");
     }
 
+    public float realvalue() {
+        return (float)Float.parseFloat(value);
+    }
+
     @Override
     public Float value(){
         float x = (float) Float.parseFloat(value);
@@ -33,9 +37,9 @@ public class FloatEntry extends DateEntry<Float> {
         if (b.NOVALUE() || this.NOVALUE())
             return false;
 
-        if (b.type() != this.type())
+        if (!b.type().equals(this.type()))
             return false;
-        else if (b.value != this.value)
+        else if (!b.value.equals(this.value))
             return false;
         return true;
     }

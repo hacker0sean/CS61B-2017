@@ -117,9 +117,35 @@ public class Database {
     }
 
     private String createSelectedTable(String name, String exprs, String tables, String conds) {
-        System.out.printf("You are trying to create a table named %s by selecting these expressions:" +
-                " '%s' from the join of these tables: '%s', filtered by these conditions: '%s'\n", name, exprs, tables, conds);
-        return null;
+        try {
+            Table temp = select2(exprs, tables, conds);
+            temp.changeTableName(name);
+            load(name, temp);
+            return "";
+        }catch(RuntimeException e){
+            return e.getMessage();
+        }
+    }
+
+    private Table select2(String exprs, String tables, String conds) throws RuntimeException{
+            String[] tablenames = tables.split(",");
+            String[] columns = exprs.split(",");
+            String[] conditions = null;
+            if (conds != null) {
+                conditions = conds.split("and");
+            }
+            ArrayList<Table> jointable = new ArrayList<>();
+            for (String i : tablenames) {
+                i = i.trim();
+                if (contain(i))
+                    jointable.add(table.get(i));
+                else
+                    throw new RuntimeException("ERROR: There's no " + i + " table in the memory.!");
+            }
+            if (jointable.size() == 0)
+                throw new RuntimeException("ERROR: There's no tables.!");
+            Table temp = Table.select(columns, jointable, conditions);
+            return temp;
     }
 
     private String loadTable(String name) {
@@ -216,6 +242,9 @@ public class Database {
             String[] tablenames = tables.split(",");
             String[] columns = exprs.split(",");
             String[] conditions = null;
+            if (conds != null) {
+                conditions = conds.split("and");
+            }
             ArrayList<Table> jointable = new ArrayList<>();
             for (String i : tablenames) {
                 i = i.trim();

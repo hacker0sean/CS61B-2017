@@ -52,6 +52,14 @@ public class datacol {
         return temp;
     }
 
+    public datacol clone2() {
+        ArrayList<DateEntry> temp = (ArrayList<DateEntry>) col.clone();
+        datacol temp2 = new datacol();
+        temp2.addList(temp);
+        return temp2;
+    }
+
+
     public void deleteItem(int x) {
         col.remove(x);
         length -= 1;

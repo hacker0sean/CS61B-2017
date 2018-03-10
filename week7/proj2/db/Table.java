@@ -75,6 +75,9 @@ public class Table {
         }
     }
 
+    public void changeTableName(String name){
+        this.title = name;
+    }
     public static void AddDateCol(Table a, datacol b) {
         a.datcol.add(b);
         a.datalength += 1;
@@ -101,18 +104,20 @@ public class Table {
         newcol.addList(a.typecol.NDdeleteItem(x));
         newcol.addList(b.typecol.NDdeleteItem(y));
         Table temp = new Table("temp", newcol);
-        Map<Integer, Integer> map = new HashMap<>();
+        ArrayList<Integer> map1 = new ArrayList<>();
+        ArrayList<Integer> map2 = new ArrayList<>();
         for (int i = 0; i < a.datalength; i += 1) {
             for (int j = 0; j < b.datalength; j += 1) {
                 if (a.datcol.get(i).getEntry(x).equals(b.datcol.get(j).getEntry(y)))
-                    map.put(i, j);
+                    map1.add(i);
+                    map2.add(j);
             }
         }
-        for (Integer i : map.keySet()) {
+        for (int i = 0 ; i < map1.size(); i += 1) {
             datacol data = new datacol();
-            data.addItem(a.datcol.get((int) i).getEntry(x));
-            data.addList(a.datcol.get((int) i).NDdeleteItem(x));
-            data.addList(b.datcol.get((int) map.get(i)).NDdeleteItem(y));
+            data.addItem(a.datcol.get((int)map1.get(i)).getEntry(x));
+            data.addList(a.datcol.get((int)map1.get(i)).NDdeleteItem(x));
+            data.addList(b.datcol.get((int)map2.get(i)).NDdeleteItem(y));
             AddDateCol(temp, data);
         }
         return temp;
@@ -173,10 +178,24 @@ public class Table {
             m.printcol(x);
     }
 
+    public Table clone(){
+        Table temp = new Table("temp");
+        temp.datalength = this.datalength;
+        temp.typelength = this.typelength;
+        for (datacol acol : this.datcol){
+            temp.datcol.add(acol.clone2());
+        }
+        temp.typecol = this.typecol.clone2();
+        return temp;
+    }
+
     public static Table select(String[] exprs, ArrayList<Table> tables, String[] conds) throws RuntimeException {
-        Table tableAfterJoin = tables.get(0);
+        Table tableAfterJoin;
         if (tables.size() > 1) {
             tableAfterJoin = join(tables);
+        }
+        else{
+            tableAfterJoin = tables.get(0).clone();
         }
         if (exprs.length == 0)
             throw new RuntimeException("Error: Empty column expressions.!");
@@ -504,8 +523,21 @@ public class Table {
                 }
             }
         }
-        printTable(tableAftercolumn);
-        return tableAfterJoin;
+        Table tableAfterCondition = new Table("temp");
+        if (conds != null) {
+            column colOfP2 = tableAftercolumn.typecol;
+            ArrayList<Condition> condis = new ArrayList<>();
+            for (String x : conds) {
+                x = x.trim();
+                condis.add(new Condition(x, colOfP2));
+            }
+            for (Condition con : condis) {
+                con.obeysCondition(tableAftercolumn, colOfP2);
+            }
+        }
+        tableAfterCondition = tableAftercolumn;
+        printTable(tableAfterCondition);
+        return tableAfterCondition;
     }
 
     public static class test {

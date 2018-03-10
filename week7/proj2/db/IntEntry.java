@@ -17,8 +17,12 @@ public class IntEntry extends DateEntry<Integer> {
 
 
     @Override
-    public Integer value() {
+    public Integer value(){
         return Integer.parseInt(value);
+    }
+
+    public int realvalue() {
+        return (int)Integer.parseInt(value);
     }
 
     public boolean equals(Object o) {

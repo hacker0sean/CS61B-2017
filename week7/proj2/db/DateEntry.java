@@ -20,7 +20,6 @@ public abstract class DateEntry<T> {
         return type;
     }
 
-
     public boolean NaN(){
         return NaN;
     }
