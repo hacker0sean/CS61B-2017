@@ -206,15 +206,13 @@ public class BSTMap<K extends Comparable<K>, V> implements Map61B<K, V>{
             }
             else{
                 Entry suc = succ(x);
+                K temp_key = (K)x.key;
+                V temp_value = (V)x.values;
                 x.key = suc.key;
                 x.values = suc.values;
-                if (suc.parent.left == suc){
-                    suc.parent.left = null;
-                }
-                else{
-                    suc.parent.right = null;
-                }
-                suc = null;
+                suc.key = temp_key;
+                suc.values = temp_value;
+                remove(temp_key);
             }
             return result;
         }
