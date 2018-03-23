@@ -286,6 +286,10 @@ public class Rasterer {
             int length = 0;
             list.sort(QuadTree::compareTo);
             for (int i = 0; i < list.size(); i++){
+                if (i + 1 == list.size()){
+                    length = i + 1;
+                    break;
+                }
                 if (list.get(i).ullat != list.get(i + 1).ullat){
                     length = i + 1;
                     break;

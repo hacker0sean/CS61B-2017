@@ -1,4 +1,4 @@
-import java.util.LinkedList;
+import java.util.*;
 
 /**
  * This class provides a shortestPath method for finding routes between two points
@@ -10,10 +10,38 @@ import java.util.LinkedList;
  */
 public class Router {
     /**
-     * Return a LinkedList of <code>Long</code>s representing the shortest path from st to dest, 
+     * Return a LinkedList of <code>Long</code>s representing the shortest path from st to dest,
      * where the longs are node IDs.
      */
     public static LinkedList<Long> shortestPath(GraphDB g, double stlon, double stlat, double destlon, double destlat) {
-        return new LinkedList<Long>();
+        Long first = g.closest(stlon, stlat);
+        Long last = g.closest(destlon, destlat);
+        LinkedList<Long> route_List = new LinkedList<>();
+        route_List.add(last);
+        PriorityQueue<GraphDB.Node> nodePriorityQueue = new PriorityQueue<>();
+
+        nodePriorityQueue.add(g.nodes.get(first));
+        GraphDB.Node temp;
+        Set<GraphDB.Node> set = new HashSet<>();
+        set.add(g.nodes.get(first));
+        while (true){
+            temp = nodePriorityQueue.poll();
+            for (Long i : g.adjacent(temp.getId())){
+                if (!(set.contains(i))){
+
+                }
+            }
+            if (isGoal(temp))
+                break;
+        }
+        Stack<Long> stack = new Stack<>();
+        while ((map.get(temp)) != null){
+            stack.push(temp);
+            temp = map.get(temp);
+        }
+        while (!stack.isEmpty()){
+            route_List.add(stack.pop());
+        }
+        return route_List;
     }
 }

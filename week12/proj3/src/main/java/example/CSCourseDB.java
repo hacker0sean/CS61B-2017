@@ -73,7 +73,7 @@ public class CSCourseDB {
         Set<String> prereqs;
         Map<String, String> extraInfo;
 
-        Course(String id, String division) {
+          Course(String id, String division) {
             this.id = id;
             this.division = division;
             this.prereqs = new HashSet<>();

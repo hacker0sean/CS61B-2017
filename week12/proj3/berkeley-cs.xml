@@ -15,7 +15,7 @@
         <tag k="Pain" v="Integer Overflow"/>
     </course>
     <course id="CS 70" division="lower" version="1">
-        <tag k="Pain" v="Inductive and probably painful."/>
+        L<tag k="Pain" v="Inductive and probably painful."/>
     </course>
     <course id="CS 188" division="upper" version="1"/>
     <course id="CS 184" division="upper" version="1"/>

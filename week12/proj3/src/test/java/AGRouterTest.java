@@ -15,6 +15,7 @@ public class AGRouterTest extends AGMapTest {
             LinkedList<Long> studentRouteResult = Router.shortestPath(graph,
                     p.routeParams.get("start_lon"), p.routeParams.get("start_lat"),
                     p.routeParams.get("end_lon"), p.routeParams.get("end_lat"));
+            System.out.println(p.rasterResult);
             assertEquals("Found route differs for input: " + p.routeParams + ".\n",
                     p.routeResult, studentRouteResult);
         }

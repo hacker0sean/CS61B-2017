@@ -14,6 +14,7 @@ public class AGRastererTest extends AGMapTest {
     public void testGetMapRaster() throws Exception {
         for (TestParameters p : params) {
             Map<String, Object> studentRasterResult = rasterer.getMapRaster(p.rasterParams);
+            System.out.println(p.rasterResult);
             checkParamsMap("Returned result differed for input: " + p.rasterParams + ".\n",
                     p.rasterResult, studentRasterResult);
         }
