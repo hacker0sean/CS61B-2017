@@ -1,0 +1,13 @@
+City string,Season int,Ratio float
+'New York',2016,0.714
+'New York',2015,1.6
+'New York',2014,0.714
+'Pittsburgh',2015,1.667
+'Pittsburgh',2014,2.2
+'Pittsburgh',2013,1.0
+'New England',2015,1.25
+'New England',2014,0.952
+'New England',2013,0.841
+'Berkeley',2015,3.0
+'Berkeley',2014,3.0
+'Berkeley',2013,3.0
