@@ -16,32 +16,46 @@ public class Router {
     public static LinkedList<Long> shortestPath(GraphDB g, double stlon, double stlat, double destlon, double destlat) {
         Long first = g.closest(stlon, stlat);
         Long last = g.closest(destlon, destlat);
+        GraphDB.Node firstNode = g.nodes.get(first);
+        GraphDB.Node lastNode = g.nodes.get(last);
         LinkedList<Long> route_List = new LinkedList<>();
         route_List.add(last);
         PriorityQueue<GraphDB.Node> nodePriorityQueue = new PriorityQueue<>();
 
-        nodePriorityQueue.add(g.nodes.get(first));
-        GraphDB.Node temp;
-        Set<GraphDB.Node> set = new HashSet<>();
-        set.add(g.nodes.get(first));
+        nodePriorityQueue.add(firstNode);
+        GraphDB.Node temp = null;
+        Map<Long, Double> distTo = new HashMap<>();
+        Map<Long, Long> edgeTo = new HashMap();
+        distTo.put(first, 0.0);
         while (true){
             temp = nodePriorityQueue.poll();
             for (Long i : g.adjacent(temp.getId())){
-                if (!(set.contains(i))){
+                GraphDB.Node x = g.nodes.get(i);
+                double Pri = distTo.get(temp.getId()) + g.distance(i, temp.getId());
+                    if (Pri < x.getPriority()){
+                        distTo.put(i, distTo.get(temp.getId()) + g.distance(temp.getId(), i));
+                        edgeTo.put(i, temp.getId());
+                        x.setPriority(Pri);
+                        if (nodePriorityQueue.contains(x)){
+                            nodePriorityQueue.remove(x);
+                            nodePriorityQueue.add(x);
+                        }
+                        else {
+                            nodePriorityQueue.add(x);
 
-                }
+                        }
+                    }
             }
-            if (isGoal(temp))
+            if (temp.getId() == last){
                 break;
+            }
         }
-        Stack<Long> stack = new Stack<>();
-        while ((map.get(temp)) != null){
-            stack.push(temp);
-            temp = map.get(temp);
+        Long edge = edgeTo.get(last);
+        while (!edge.equals(first)){
+            route_List.addFirst(edge);
+            edge = edgeTo.get(edge);
         }
-        while (!stack.isEmpty()){
-            route_List.add(stack.pop());
-        }
+        route_List.addFirst(first);
         return route_List;
     }
 }

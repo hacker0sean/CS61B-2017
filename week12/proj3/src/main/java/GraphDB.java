@@ -22,9 +22,10 @@ public class GraphDB {
 
 
     Map<Long, Node> nodes;
-
+    Map<String, ArrayList<Node>> Name_To_NODE;
+    Trie duptrie;
+    Map<String, String> simple_to_complex_string = new TreeMap<>();
     public static class Node implements Comparable<Node>{
-        private Set<Node> adjNodes;
         private Set<Long> adjID;
         private String name;
         private double lat;
@@ -42,24 +43,21 @@ public class GraphDB {
             name = null;
             adjID = new TreeSet<>();
             adjNumber = 0;
-            priority = 0;
-            adjNodes = new TreeSet<>();
+            priority = Double.MAX_VALUE;
         }
         public Set getAdj(){
             return adjID;
         }
 
         private void addAdjHelp(Node adj){
-            adj.adjNodes.add(this);
-            adj.adjNumber ++;
             adj.adjID.add(this.id);
+            adj.adjNumber ++;
         }
 
         public void addAdj(Node adj){
-            adjNodes.add(adj);
-            this.adjNumber ++;
             adjID.add(adj.id);
-            addAdjHelp(adj);
+            this.adjNumber ++;
+            this.addAdjHelp(adj);
         }
 
         public void addName(String name){
@@ -74,6 +72,7 @@ public class GraphDB {
             return id;
         }
 
+
         public double getLat(){
             return lat;
         }
@@ -87,7 +86,7 @@ public class GraphDB {
         }
         @Override
         public int compareTo(Node node) {
-            return (int) (this.priority - node.priority);
+            return (int) ((this.priority - node.priority) * 100000);
         }
     }
     /**
@@ -97,6 +96,7 @@ public class GraphDB {
      */
     public GraphDB(String dbPath) {
         try {
+            Name_To_NODE = new HashMap<>();
             nodes = new HashMap<>();
             File inputFile = new File(dbPath);
             SAXParserFactory factory = SAXParserFactory.newInstance();
@@ -106,7 +106,22 @@ public class GraphDB {
         } catch (ParserConfigurationException | SAXException | IOException e) {
             e.printStackTrace();
         }
+        duptrie = new Trie();
+        for (Node temp : this.nodes.values()){
+            if (temp.getName()!= null) {
+                String simple = MapServer.cleanString(temp.getName());
+                if (this.Name_To_NODE.get(simple) == null) {
+                    this.Name_To_NODE.put(simple, new ArrayList<Node>());
+                    this.Name_To_NODE.get(simple).add(temp);
+                } else {
+                    this.Name_To_NODE.get(simple).add(temp);
+                }
+                simple_to_complex_string.put(simple,temp.getName());
+                duptrie.put(simple);
+            }
+        }
         clean();
+
     }
 
 
@@ -174,6 +189,10 @@ public class GraphDB {
             }
         }
         return minNode;
+    }
+
+    Node getNode(long id) {
+        return nodes.get(id);
     }
 
     /** Longitude of vertex v. */

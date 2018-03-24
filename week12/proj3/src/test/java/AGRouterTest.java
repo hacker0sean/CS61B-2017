@@ -12,10 +12,16 @@ public class AGRouterTest extends AGMapTest {
     @Test
     public void testShortestPath() throws Exception {
         for (TestParameters p : params) {
+            Integer j = 0;
+            for (Long i : p.routeResult){
+                System.out.println(j.toString() + ": " + i);
+                j++;
+            }
             LinkedList<Long> studentRouteResult = Router.shortestPath(graph,
                     p.routeParams.get("start_lon"), p.routeParams.get("start_lat"),
                     p.routeParams.get("end_lon"), p.routeParams.get("end_lat"));
-            System.out.println(p.rasterResult);
+
+
             assertEquals("Found route differs for input: " + p.routeParams + ".\n",
                     p.routeResult, studentRouteResult);
         }

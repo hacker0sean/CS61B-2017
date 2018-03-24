@@ -1,24 +1,17 @@
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.BasicStroke;
-import java.awt.Color;
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.util.Base64;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.awt.image.BufferedImage;
-import javax.imageio.ImageIO;
-import java.io.IOException;
-
-
-/* Maven is used to pull in these dependencies. */
 import com.google.gson.Gson;
 
+import javax.imageio.ImageIO;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.IOException;
+import java.util.*;
+import java.util.List;
+
 import static spark.Spark.*;
+
+/* Maven is used to pull in these dependencies. */
 
 /**
  * This MapServer class is the entry point for running the JavaSpark web server for the BearMaps
@@ -278,8 +271,21 @@ public class MapServer {
      * @return A <code>List</code> of the full names of locations whose cleaned name matches the
      * cleaned <code>prefix</code>.
      */
+
+    public static String cleanString(String prefix){
+        prefix = prefix.toLowerCase();
+        String cleaned = prefix.replaceAll("[^a-z\" \"]", "");
+        return cleaned;
+    }
+
     public static List<String> getLocationsByPrefix(String prefix) {
-        return new LinkedList<>();
+        prefix = cleanString(prefix);
+        ArrayList<String> simple = graph.duptrie.find(prefix);
+        ArrayList<String> complex = new ArrayList<>();
+        for (String i : simple){
+            complex.add(graph.simple_to_complex_string.get(i));
+        }
+        return complex;
     }
 
     /**
@@ -295,7 +301,17 @@ public class MapServer {
      * "id" -> Number, The id of the node. <br>
      */
     public static List<Map<String, Object>> getLocations(String locationName) {
-        return new LinkedList<>();
+        ArrayList<GraphDB.Node> nodeS = graph.Name_To_NODE.get(locationName);
+        List<Map<String, Object>> result = new ArrayList<>();
+        for (GraphDB.Node i : nodeS){
+            Map<String, Object> node_information = new HashMap<>();
+            node_information.put("lat", i.getLat());
+            node_information.put("lon", i.getLon());
+            node_information.put("name", i.getName());
+            node_information.put("id", i.getId());
+            result.add(node_information);
+        }
+        return result;
     }
 
     /** Validates that Rasterer has returned a result that can be rendered.
