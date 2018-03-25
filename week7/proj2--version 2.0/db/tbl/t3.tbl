@@ -1,4 +1,4 @@
 h int,m float
-2,2
-8,4
+2,NOVALUE
+8,0.0
 10,5

@@ -12,35 +12,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Table.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Table.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db/Table.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="176" column="0" lean-forward="false" selection-start-line="176" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
+            <state relative-caret-position="423">
+              <caret line="241" column="22" lean-forward="false" selection-start-line="241" selection-start-column="22" selection-end-line="241" selection-end-column="22" />
               <folding>
-                <element signature="e#2130#2131#0" expanded="true" />
-                <element signature="e#2163#2164#0" expanded="true" />
+                <element signature="method#generateDataCol#0;class#Table#0" expanded="false" />
+                <element signature="method#joinTable#0;class#Table#0" expanded="false" />
+                <element signature="method#clone#0;class#Table#0" expanded="false" />
+                <element signature="method#merge1#0;class#Table#0" expanded="false" />
+                <element signature="method#merge2#0;class#Table#0" expanded="false" />
+                <element signature="method#join#0;class#Table#0" expanded="false" />
+                <element signature="method#join#1;class#Table#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TypeColumn.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/TypeColumn.java">
+      <file leaf-file-name="Test" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/tbl/Test">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+            <state relative-caret-position="17">
+              <caret line="1" column="45" lean-forward="false" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Condition.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/Condition.java">
+      <file leaf-file-name="Parse.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/Parse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="724">
-              <caret line="76" column="32" lean-forward="false" selection-start-line="76" selection-start-column="32" selection-end-line="76" selection-end-column="32" />
-              <folding />
+            <state relative-caret-position="408">
+              <caret line="180" column="29" lean-forward="false" selection-start-line="180" selection-start-column="29" selection-end-line="180" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -48,41 +55,38 @@
       <file leaf-file-name="IntEntry.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/IntEntry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="30" column="32" lean-forward="false" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+            <state relative-caret-position="102">
+              <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
               <folding>
-                <element signature="e#505#506#0" expanded="true" />
-                <element signature="e#533#534#0" expanded="true" />
-                <element signature="e#576#577#0" expanded="true" />
-                <element signature="e#622#623#0" expanded="true" />
+                <element signature="e#480#481#0" expanded="true" />
+                <element signature="e#528#529#0" expanded="true" />
+                <element signature="e#2086#2087#0" expanded="true" />
+                <element signature="e#2132#2133#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StringEntry.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/StringEntry.java">
+      <file leaf-file-name="DateEntry.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/DateEntry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="23" selection-end-column="5" />
-              <folding>
-                <element signature="e#363#364#0" expanded="true" />
-                <element signature="e#391#392#0" expanded="true" />
-                <element signature="e#433#434#0" expanded="true" />
-                <element signature="e#465#466#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="153">
+              <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Database.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/db/Database.java">
+      <file leaf-file-name="FloatEntry.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/FloatEntry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="340">
+              <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
               <folding>
-                <element signature="e#723#724#0" expanded="true" />
-                <element signature="e#763#764#0" expanded="true" />
+                <element signature="e#473#474#0" expanded="true" />
+                <element signature="e#523#524#0" expanded="true" />
+                <element signature="e#925#926#0" expanded="true" />
+                <element signature="e#971#972#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -91,8 +95,8 @@
       <file leaf-file-name="DataRow.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/DataRow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+            <state relative-caret-position="253">
+              <caret line="109" column="39" lean-forward="false" selection-start-line="109" selection-start-column="39" selection-end-line="109" selection-end-column="39" />
               <folding>
                 <element signature="e#1976#1977#0" expanded="true" />
                 <element signature="e#2009#2010#0" expanded="true" />
@@ -101,42 +105,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FloatEntry.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/FloatEntry.java">
+      <file leaf-file-name="StringEntry.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/StringEntry.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+            <state relative-caret-position="357">
+              <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
               <folding>
-                <element signature="e#450#451#0" expanded="true" />
-                <element signature="e#500#501#0" expanded="true" />
-                <element signature="e#546#547#0" expanded="true" />
-                <element signature="e#574#575#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Parse.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/Parse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="128" column="0" lean-forward="false" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ColEntry.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/ColEntry.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding>
-                <element signature="e#609#610#0" expanded="true" />
-                <element signature="e#641#642#0" expanded="true" />
-                <element signature="e#700#701#0" expanded="true" />
+                <element signature="e#659#660#0" expanded="true" />
+                <element signature="e#691#692#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -167,6 +143,8 @@
       <find>dat</find>
       <find>datrow</find>
       <find>datcol</find>
+      <find>InsertDataCol</find>
+      <find>tableAftercolumn</find>
     </findStrings>
     <replaceStrings>
       <replace>&gt;=</replace>
@@ -185,6 +163,8 @@
       <replace>TypeColumn</replace>
       <replace>Datacolumn</replace>
       <replace>row</replace>
+      <replace>InsertDataRow</replace>
+      <replace>tableAfterColumnExpression</replace>
     </replaceStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -200,23 +180,28 @@
         <option value="$PROJECT_DIR$/db/DateEntry.java" />
         <option value="$PROJECT_DIR$/db/tbl/t6.tbl" />
         <option value="$PROJECT_DIR$/db/tbl/t3.tbl" />
-        <option value="$PROJECT_DIR$/db/greaterThanOrEquals.java" />
-        <option value="$PROJECT_DIR$/db/lessThan.java" />
         <option value="$PROJECT_DIR$/lessThanOrEquals.java" />
-        <option value="$PROJECT_DIR$/db/notEquals.java" />
-        <option value="$PROJECT_DIR$/db/greaterThan.java" />
-        <option value="$PROJECT_DIR$/db/equals.java" />
         <option value="$PROJECT_DIR$/db/Database.java" />
         <option value="$PROJECT_DIR$/Main.java" />
         <option value="$PROJECT_DIR$/db/datacol.java" />
         <option value="$PROJECT_DIR$/db/column.java" />
-        <option value="$PROJECT_DIR$/db/Parse.java" />
+        <option value="$PROJECT_DIR$/db/equals.java" />
+        <option value="$PROJECT_DIR$/db/lessThan.java" />
+        <option value="$PROJECT_DIR$/db/greaterThan.java" />
         <option value="$PROJECT_DIR$/db/Condition.java" />
-        <option value="$PROJECT_DIR$/db/Table.java" />
-        <option value="$PROJECT_DIR$/db/DataRow.java" />
+        <option value="$PROJECT_DIR$/db/greaterThanOrEquals.java" />
+        <option value="$PROJECT_DIR$/db/notEquals.java" />
+        <option value="$PROJECT_DIR$/db/lessThanOrEquals.java" />
+        <option value="$PROJECT_DIR$/db/tbl/new.tbl" />
+        <option value="$PROJECT_DIR$/db/Parse.java" />
+        <option value="$PROJECT_DIR$/db/TypeColumn.java" />
         <option value="$PROJECT_DIR$/db/StringEntry.java" />
-        <option value="$PROJECT_DIR$/db/FloatEntry.java" />
+        <option value="$PROJECT_DIR$/db/DataRow.java" />
         <option value="$PROJECT_DIR$/db/IntEntry.java" />
+        <option value="$PROJECT_DIR$/db/FloatEntry.java" />
+        <option value="$PROJECT_DIR$/db/tbl/t2.tbl" />
+        <option value="$PROJECT_DIR$/db/tbl/Test" />
+        <option value="$PROJECT_DIR$/db/Table.java" />
       </list>
     </option>
   </component>
@@ -254,41 +239,31 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="proj2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="proj2" type="462c0819:PsiDirectoryNode" />
+              <item name="proj2--version 2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="proj2--version 2.0" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="proj2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="proj2" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="proj2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="proj2" type="462c0819:PsiDirectoryNode" />
+              <item name="proj2--version 2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="proj2--version 2.0" type="462c0819:PsiDirectoryNode" />
               <item name="db" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="proj2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="proj2" type="462c0819:PsiDirectoryNode" />
+              <item name="proj2--version 2.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="proj2--version 2.0" type="462c0819:PsiDirectoryNode" />
               <item name="db" type="462c0819:PsiDirectoryNode" />
               <item name="tbl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="proj2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="proj2" type="462c0819:PsiDirectoryNode" />
-              <item name="examples" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -314,7 +289,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -349,6 +324,31 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+    </configuration>
+    <configuration name="IntEntry$test.testNeg" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="db.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="proj2" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="db" />
+      <option name="MAIN_CLASS_NAME" value="db.IntEntry$test" />
+      <option name="METHOD_NAME" value="testNeg" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -410,9 +410,14 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.IntEntry$test.testNeg" />
+    </list>
     <recent_temporary>
-      <list size="1">
+      <list size="2">
         <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.IntEntry$test.testNeg" />
       </list>
     </recent_temporary>
   </component>
@@ -433,15 +438,46 @@
       <workItem from="1520640519380" duration="6000" />
       <workItem from="1520644757211" duration="10423000" />
       <workItem from="1520655292098" duration="265000" />
-      <workItem from="1521875889011" duration="4402000" />
+      <workItem from="1521875889011" duration="8437000" />
+      <workItem from="1521936738400" duration="11212000" />
+      <workItem from="1521954051288" duration="1869000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="IntEntry$test_testNeg - 2018.03.24 at 17h 38m 43s.xml">
+      <configuration name="IntEntry$test.testNeg" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IntEntry$test_testNeg - 2018.03.24 at 17h 39m 03s.xml">
+      <configuration name="IntEntry$test.testNeg" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IntEntry$test_testNeg - 2018.03.24 at 17h 39m 06s.xml">
+      <configuration name="IntEntry$test.testNeg" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IntEntry$test_testNeg - 2018.03.24 at 17h 40m 01s.xml">
+      <configuration name="IntEntry$test.testNeg" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IntEntry$test_testNeg - 2018.03.25 at 08h 30m 37s.xml">
+      <configuration name="IntEntry$test.testNeg" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="IntEntry$test_testNeg - 2018.03.25 at 08h 30m 38s.xml">
+      <configuration name="IntEntry$test.testNeg" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18868000" />
+    <option name="totallyTimeSpent" value="35984000" />
+  </component>
+  <component name="TodoView" selected-index="1">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="26" width="1920" height="1054" extended-state="6" />
+    <frame x="-44" y="139" width="1920" height="1054" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -450,16 +486,16 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867885" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Style Checker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Style Checker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2529349" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25827107" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Statistic" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -472,7 +508,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -521,106 +557,31 @@
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/db/Parse.java</url>
-          <line>77</line>
+          <url>file://$PROJECT_DIR$/db/Table.java</url>
+          <line>243</line>
           <properties />
-          <option name="timeStamp" value="48" />
+          <option name="timeStamp" value="89" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/db/Table.java</url>
-          <line>174</line>
+          <line>248</line>
           <properties />
-          <option name="timeStamp" value="58" />
+          <option name="timeStamp" value="90" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="59" />
+      <option name="time" value="91" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/Database.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3910">
-          <caret line="244" column="0" lean-forward="false" selection-start-line="244" selection-start-column="0" selection-end-line="244" selection-end-column="0" />
-          <folding>
-            <element signature="e#723#724#0" expanded="true" />
-            <element signature="e#763#764#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/Comparison.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/tbl/seasonRatios.tbl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/ColEntry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/Table.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8534">
-          <caret line="511" column="50" lean-forward="false" selection-start-line="511" selection-start-column="50" selection-end-line="511" selection-end-column="50" />
-          <folding>
-            <element signature="e#2130#2131#0" expanded="true" />
-            <element signature="e#2163#2164#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/greaterThanOrEquals.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/greaterThan.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="50" lean-forward="false" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/IntEntry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="25" selection-end-column="5" />
-          <folding>
-            <element signature="e#576#577#0" expanded="true" />
-            <element signature="e#622#623#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/DateEntry.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-          <folding>
-            <element signature="e#470#471#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -636,7 +597,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="42" lean-forward="false" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -645,8 +605,7 @@
         <state relative-caret-position="799">
           <caret line="61" column="46" lean-forward="true" selection-start-line="61" selection-start-column="46" selection-end-line="61" selection-end-column="46" />
           <folding>
-            <element signature="e#723#724#0" expanded="true" />
-            <element signature="e#763#764#0" expanded="true" />
+            <element signature="e#763#764#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -664,100 +623,19 @@
         <state relative-caret-position="221">
           <caret line="18" column="45" lean-forward="false" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
           <folding>
-            <element signature="e#546#547#0" expanded="true" />
-            <element signature="e#574#575#0" expanded="true" />
+            <element signature="e#473#474#0" expanded="true" />
+            <element signature="e#523#524#0" expanded="true" />
+            <element signature="e#925#926#0" expanded="true" />
+            <element signature="e#971#972#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/greaterThanOrEquals.java" />
-    <entry file="file://$PROJECT_DIR$/db/tbl/t1.tbl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/tbl/t6.tbl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/tbl/t5.tbl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/tbl/t2.tbl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/tbl/t3.tbl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/greaterThanOrEquals.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="33" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/lessThanOrEquals.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/notEquals.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="27" lean-forward="false" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/equals.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/greaterThan.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="85" lean-forward="false" selection-start-line="16" selection-start-column="85" selection-end-line="16" selection-end-column="85" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/lessThan.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/tbl/fans.tbl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -768,26 +646,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/tbl/records.tbl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/tbl/seasonRatios.tbl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/Comparison.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -807,29 +669,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/DateEntry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="e#470#471#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/datarow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/db/datarow.java" />
     <entry file="file://$PROJECT_DIR$/examples/teams.tbl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="46" lean-forward="true" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -837,7 +681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -845,79 +688,259 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/equals.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="18" column="50" lean-forward="false" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/lessThan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="44" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/greaterThan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="39" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/lessThanOrEquals.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/notEquals.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="15" lean-forward="true" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/greaterThanOrEquals.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="48" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/util/Map.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="25" column="6" lean-forward="false" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/tbl/x.tbl" />
+    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/util/ArrayList.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="202" column="19" lean-forward="false" selection-start-line="202" selection-start-column="19" selection-end-line="202" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/ColEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="e#609#610#0" expanded="false" />
+            <element signature="e#641#642#0" expanded="false" />
+            <element signature="e#668#669#0" expanded="false" />
+            <element signature="e#700#701#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/tbl/t4.tbl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/Condition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="16" column="26" lean-forward="false" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/tbl/t5.tbl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/tbl/teams.tbl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="72" lean-forward="false" selection-start-line="6" selection-start-column="72" selection-end-line="6" selection-end-column="72" />
+        <state relative-caret-position="17">
+          <caret line="1" column="60" lean-forward="true" selection-start-line="1" selection-start-column="60" selection-end-line="1" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../javalib/stdlib-package.jar!/edu/princeton/cs/introcs/In.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2482">
+          <caret line="160" column="0" lean-forward="false" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="374">
+          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../javalib/stdlib-package.jar!/edu/princeton/cs/introcs/In.java">
+    <entry file="file://$PROJECT_DIR$/db/tbl/fans.tbl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
+        <state relative-caret-position="102">
+          <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/tbl/m.tbl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/tbl/seasonRatios.tbl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/tbl/records.tbl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/tbl/t3.tbl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/lang/Object.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="23" column="18" lean-forward="false" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/tbl/new.tbl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="3" lean-forward="false" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/StringEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+          <folding>
+            <element signature="e#659#660#0" expanded="true" />
+            <element signature="e#691#692#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/FloatEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+          <folding>
+            <element signature="e#473#474#0" expanded="true" />
+            <element signature="e#523#524#0" expanded="true" />
+            <element signature="e#925#926#0" expanded="true" />
+            <element signature="e#971#972#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="e#763#764#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/tbl/t1.tbl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/DateEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/TypeColumn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="119" column="16" lean-forward="false" selection-start-line="119" selection-start-column="16" selection-end-line="119" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/Parse.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="128" column="0" lean-forward="false" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
+        <state relative-caret-position="408">
+          <caret line="180" column="29" lean-forward="false" selection-start-line="180" selection-start-column="29" selection-end-line="180" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/ColEntry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <element signature="e#609#610#0" expanded="true" />
-            <element signature="e#641#642#0" expanded="true" />
-            <element signature="e#700#701#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/TypeColumn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/Table.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="176" column="0" lean-forward="false" selection-start-line="176" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
-          <folding>
-            <element signature="e#2130#2131#0" expanded="true" />
-            <element signature="e#2163#2164#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/DataRow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+        <state relative-caret-position="253">
+          <caret line="109" column="39" lean-forward="false" selection-start-line="109" selection-start-column="39" selection-end-line="109" selection-end-column="39" />
           <folding>
             <element signature="e#1976#1977#0" expanded="true" />
             <element signature="e#2009#2010#0" expanded="true" />
@@ -925,60 +948,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/Condition.java">
+    <entry file="file://$PROJECT_DIR$/db/tbl/t2.tbl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="724">
-          <caret line="76" column="32" lean-forward="false" selection-start-line="76" selection-start-column="32" selection-end-line="76" selection-end-column="32" />
+        <state relative-caret-position="0">
+          <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/FloatEntry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
-          <folding>
-            <element signature="e#450#451#0" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-            <element signature="e#546#547#0" expanded="true" />
-            <element signature="e#574#575#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/IntEntry.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="30" column="32" lean-forward="false" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+        <state relative-caret-position="102">
+          <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
           <folding>
-            <element signature="e#505#506#0" expanded="true" />
-            <element signature="e#533#534#0" expanded="true" />
-            <element signature="e#576#577#0" expanded="true" />
-            <element signature="e#622#623#0" expanded="true" />
+            <element signature="e#480#481#0" expanded="true" />
+            <element signature="e#528#529#0" expanded="true" />
+            <element signature="e#2086#2087#0" expanded="true" />
+            <element signature="e#2132#2133#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/StringEntry.java">
+    <entry file="file://$PROJECT_DIR$/db/tbl/Test">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="23" selection-end-column="5" />
-          <folding>
-            <element signature="e#363#364#0" expanded="true" />
-            <element signature="e#391#392#0" expanded="true" />
-            <element signature="e#433#434#0" expanded="true" />
-            <element signature="e#465#466#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="1" column="45" lean-forward="false" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/Database.java">
+    <entry file="file://$PROJECT_DIR$/db/Table.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="423">
+          <caret line="241" column="22" lean-forward="false" selection-start-line="241" selection-start-column="22" selection-end-line="241" selection-end-column="22" />
           <folding>
-            <element signature="e#723#724#0" expanded="true" />
-            <element signature="e#763#764#0" expanded="true" />
+            <element signature="method#generateDataCol#0;class#Table#0" expanded="false" />
+            <element signature="method#joinTable#0;class#Table#0" expanded="false" />
+            <element signature="method#clone#0;class#Table#0" expanded="false" />
+            <element signature="method#merge1#0;class#Table#0" expanded="false" />
+            <element signature="method#merge2#0;class#Table#0" expanded="false" />
+            <element signature="method#join#0;class#Table#0" expanded="false" />
+            <element signature="method#join#1;class#Table#0" expanded="false" />
           </folding>
         </state>
       </provider>

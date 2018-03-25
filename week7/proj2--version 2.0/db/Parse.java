@@ -119,9 +119,8 @@ public class Parse {
         }
         if (jointable.size() == 0)
             throw new RuntimeException("ERROR: There's no tables.!");
-//        Table temp = Table.select(columns, jointable, conditions);
-//        return temp;
-        return null;
+        Table temp = Table.select(columns, jointable, conditions);
+        return temp;
     }
 
     private static String loadTable(String name) {
@@ -224,9 +223,12 @@ public class Parse {
             }
             if (jointable.size() == 0)
                 throw new RuntimeException("ERROR: There's no tables.!");
-//            Table temp = Table.select(columns, jointable, conditions);
+            Table temp = Table.select(columns, jointable, conditions);
+            Table.printTable(temp);
             return "";
         } catch (RuntimeException e) {
+            return e.getMessage();
+        } catch (Exception e){
             return e.getMessage();
         }
     }

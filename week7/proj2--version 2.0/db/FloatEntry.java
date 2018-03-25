@@ -8,12 +8,12 @@ public class FloatEntry extends DateEntry<Float> {
 
     public FloatEntry(String value) throws RuntimeException{
         super(false, false, value.trim(), "float");
-        realvalue = Float.parseFloat(value);
-        if (value.equals(NOVALUE)){
+        if (value.equals("NOVALUE")){
             value = null;
             super.NOVALUE = true;
+            return ;
         }
-
+        realvalue = Float.parseFloat(value);
     }
 
     public FloatEntry(){
@@ -22,6 +22,10 @@ public class FloatEntry extends DateEntry<Float> {
 
     @Override
     public String toString() {
+        if (NaN)
+            return "NaN";
+        if (NOVALUE)
+            return value;
         float x = Float.parseFloat(value);
         DecimalFormat fnum = new DecimalFormat("##0.000");
         String dd = fnum.format(x);
@@ -32,6 +36,66 @@ public class FloatEntry extends DateEntry<Float> {
     @Override
     public Float value(){
         return Float.parseFloat(value);
+    }
+
+    public float realvalue(){
+        return realvalue;
+    }
+    public static FloatEntry Int_operator_FloatLiteral(IntEntry entry1, String x2, char operator) throws RuntimeException{
+        Float x1 = entry1.realvalue.floatValue();
+        FloatEntry transfer = new FloatEntry(x1.toString());
+        transfer.NOVALUE = entry1.NOVALUE;
+        transfer.NaN = entry1.NaN;
+        return Float_operator_Literal(transfer, x2, operator);
+    }
+
+    public static FloatEntry Float_operator_Literal(FloatEntry x1, String x2, char operator) throws RuntimeException{
+        FloatEntry entry1 = x1;
+        FloatEntry entry2 = new FloatEntry(x2);
+        return Float_operator_Float(entry1, entry2, operator);
+    }
+
+    public static FloatEntry Float_operator_Float(IntEntry entry1, FloatEntry entry2, char operator) throws RuntimeException{
+        Float x1 = entry1.realvalue.floatValue();
+        FloatEntry transfer = new FloatEntry(x1.toString());
+        transfer.NOVALUE = entry2.NOVALUE;
+        transfer.NaN = entry2.NaN;
+        return Float_operator_Float(transfer, entry2, operator);
+    }
+
+    public static FloatEntry Float_operator_Float(FloatEntry entry1, IntEntry entry2, char operator) throws RuntimeException{
+        Float x1 = entry2.realvalue.floatValue();
+        FloatEntry transfer = new FloatEntry(x1.toString());
+        transfer.NOVALUE = entry2.NOVALUE;
+        transfer.NaN = entry2.NaN;
+        return Float_operator_Float(entry1, transfer, operator);
+    }
+
+    public static FloatEntry Float_operator_Float(FloatEntry entry1, FloatEntry entry2, char operator) throws RuntimeException{
+        FloatEntry entrynew;
+        if (entry1.NaN || entry2.NaN)
+            entrynew = new FloatEntry();
+        else if (entry1.NOVALUE && entry2.NOVALUE)
+            entrynew = new FloatEntry("NOVALUE");
+        else if (entry1.NOVALUE || entry2.NOVALUE)
+            entrynew = new FloatEntry("0.0");
+        else {
+            float x1 = entry1.realvalue;
+            float x2 = entry2.realvalue;
+            if (operator == '/') {
+                if (x2 == 0.0)
+                    entrynew = new FloatEntry();
+                else
+                    entrynew = new FloatEntry(((Float) (float) (x1 / x2)).toString());
+            } else if (operator == '+') {
+                entrynew = new FloatEntry(((Float) (float) (x1 + x2)).toString());
+            } else if (operator == '-') {
+                entrynew = new FloatEntry(((Float) (float) (x1 - x2)).toString());
+            } else {
+                entrynew = new FloatEntry(((Float) (float) (x1 * x2)).toString());
+            }
+        }
+        return entrynew;
     }
 
     public boolean equals(Object o){

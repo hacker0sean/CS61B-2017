@@ -94,7 +94,7 @@ public class DataRow {
 
     public void printcol(BufferedWriter x) throws IOException {
         for (int i = 0; i < length; i++) {
-            x.write((col.get(i).value().toString()));
+            x.write((col.get(i).toString()));
             if (i != length - 1) {
                 x.write(",");
             }

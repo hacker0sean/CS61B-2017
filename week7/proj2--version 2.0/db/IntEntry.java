@@ -2,33 +2,75 @@ package db;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 
 public class IntEntry extends DateEntry<Integer> {
 
     public IntEntry(String value) throws RuntimeException {
         super(false, false, value.trim(), "int");
-        realvalue = value();
-        if (value.equals(NOVALUE)){
+        if (value.equals("NOVALUE")) {
             value = null;
             super.NOVALUE = true;
+            return;
         }
+        realvalue = value();
     }
 
-    public IntEntry(){
+    public IntEntry() {
         super(true, false, "NaN", "int");
+    }
+
+    public static IntEntry Int_operator_Literal(IntEntry entry1, String x2, char operator) throws RuntimeException{
+        IntEntry entry2 = new IntEntry(x2);
+        return Int_operator_Int(entry1, entry2, operator);
+    }
+
+    public static IntEntry Int_operator_Int(IntEntry entry1, IntEntry entry2, char operator) throws RuntimeException {
+        IntEntry entrynew;
+        if (entry1.NaN || entry2.NaN)
+            entrynew = new IntEntry();
+        else if (entry1.NOVALUE && entry2.NOVALUE)
+            entrynew = new IntEntry("NOVALUE");
+        else if (entry1.NOVALUE || entry2.NOVALUE)
+            entrynew = new IntEntry("0");
+        else {
+            int x1 = entry1.realvalue;
+            int x2 = entry2.realvalue;
+            if (operator == '+') {
+                entrynew = new IntEntry(((Integer) (x1 + x2)).toString());
+            } else if (operator == '-') {
+                entrynew = new IntEntry(((Integer) (x1 - x2)).toString());
+            } else if (operator == '*') {
+                entrynew = new IntEntry(((Integer) (x1 * x2)).toString());
+            } else {
+                if (x2 == 0)
+                    entrynew = new IntEntry();
+                else {
+                    entrynew = new IntEntry(((Integer) (x1 / x2)).toString());
+                }
+            }
+        }
+        return entrynew;
     }
 
     @Override
     public String toString() {
+        if (NaN)
+            return "NaN";
+        if (NOVALUE)
+            return "NOVALUE";
         return value;
     }
 
-    @Override
-    public Integer value(){
-        return Integer.parseInt(value);
+    public int realvalue(){
+        return realvalue;
     }
 
+    @Override
+    public Integer value() {
+        return Integer.parseInt(value);
+    }
 
     public boolean equals(Object o) {
         DateEntry b = (DateEntry) o;
@@ -70,7 +112,7 @@ public class IntEntry extends DateEntry<Integer> {
             FloatEntry d = new FloatEntry("-2");
             Integer b = -2;
             Integer c = a.realvalue;
-           // assertEquals(b, d.realvalue);
+            // assertEquals(b, d.realvalue);
         }
     }
 }

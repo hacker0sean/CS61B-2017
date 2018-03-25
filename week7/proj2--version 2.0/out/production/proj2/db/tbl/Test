@@ -1,0 +1,7 @@
+load fans
+select Firstname + Lastname as name from fans
+load teams
+select Stadium + TeamName as k from teams
+select City + 'wwee' as k from teams
+load t2
+select x + z as k from t2
